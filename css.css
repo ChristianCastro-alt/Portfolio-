@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    background-image: url(Bg.jpg);
+    color: #000;
+    line-height: 1.6;
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    animation: slideDown 0.8s ease-out;
+    background-color: #fff;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  nav ul {
+    background-color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    animation: fadeUp 1s ease forwards;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: #000;
+    transition: width 0.3s;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  section {
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeUp 1s ease forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .project {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+  }
+  img{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin-bottom: 2rem;
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeUp 1s ease forwards;
+  }
+
+  input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s;
+  }
+
+  input:focus, textarea:focus {
+    background-color: #f0f0f0;
+    outline: none;
+  }
+
+  button {
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #333;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #000;
+    animation: fadeIn 2s ease;
+    background-color: #fff;
+  }
