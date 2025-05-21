@@ -1,5 +1,7 @@
 * {
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    
   }
 
   body {
@@ -11,6 +13,7 @@
     line-height: 1.6;
     animation: fadeIn 1s forwards;
     box-shadow: #000;
+ 
   }
 
   @keyframes fadeIn {
@@ -77,6 +80,8 @@
 
   section {
     background-color: #fff;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     padding: 2rem;
     max-width: 800px;
     margin: auto;
@@ -98,6 +103,7 @@
     background-color: #fff;
     margin-bottom: 2rem;
     border-top: 1px solid #000;
+    
     padding-top: 1rem;
   }
   img{
