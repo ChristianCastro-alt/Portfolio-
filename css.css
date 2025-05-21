@@ -10,6 +10,7 @@
     color: #000;
     line-height: 1.6;
     animation: fadeIn 1s forwards;
+    box-shadow: #000;
   }
 
   @keyframes fadeIn {
@@ -127,7 +128,20 @@
     background-color: #f0f0f0;
     outline: none;
   }
-  
+
+  button {
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: grey;
+  }
+
   footer {
     text-align: center;
     padding: 1rem;
@@ -141,4 +155,9 @@
   }
   .btn-carousel:hover{
     color: brown;
+  }
+
+  .custom-container{
+    text-align: center;
+    text-shadow: #000;
   }
